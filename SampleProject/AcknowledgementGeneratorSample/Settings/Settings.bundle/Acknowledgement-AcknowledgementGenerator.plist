@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>StringsTable</key>
+    <string>ThirdPartyLicenses</string>
+    <key>PreferenceSpecifiers</key>
+    <array>
+      <dict>
+        <key>Type</key>
+        <string>PSGroupSpecifier</string>
+        <key>FooterText</key>
+        <string>"THE BEER-WARE LICENSE" (Revision 42):
+&lt;http://www.knage.net&gt; wrote this file. As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return Christophe Vallinas Knage.</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
