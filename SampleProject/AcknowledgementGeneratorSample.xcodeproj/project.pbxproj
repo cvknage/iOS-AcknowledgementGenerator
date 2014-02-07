@@ -215,6 +215,7 @@
 				83D934DE18A527DF003FFF55 /* Sources */,
 				83D934DF18A527DF003FFF55 /* Frameworks */,
 				83D934E018A527DF003FFF55 /* Resources */,
+				8328246518A5732B00A5FA0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -267,6 +268,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8328246518A5732B00A5FA0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd AcknowledgementGeneratorSample/Settings\nruby acknowledgementGenerator.rb";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83D934DE18A527DF003FFF55 /* Sources */ = {
