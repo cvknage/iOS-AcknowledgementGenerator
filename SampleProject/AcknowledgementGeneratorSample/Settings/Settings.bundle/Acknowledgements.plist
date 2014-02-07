@@ -14,6 +14,14 @@
         <key>File</key>
         <string>Acknowledgement-AcknowledgementGenerator</string>
       </dict>
+      <dict>
+        <key>Type</key>
+        <string>PSChildPaneSpecifier</string>
+        <key>Title</key>
+        <string>ObjectiveC-Basic-Blocks</string>
+        <key>File</key>
+        <string>Acknowledgement-ObjectiveC-Basic-Blocks</string>
+      </dict>
     </array>
   </dict>
 </plist>

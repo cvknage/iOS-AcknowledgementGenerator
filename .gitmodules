@@ -1,0 +1,3 @@
+[submodule "SampleProject/External/ObjectiveC-Basic-Blocks"]
+	path = SampleProject/External/ObjectiveC-Basic-Blocks
+	url = https://github.com/cvknage/ObjectiveC-Basic-Blocks.git
