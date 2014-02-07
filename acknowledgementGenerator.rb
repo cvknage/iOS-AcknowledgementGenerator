@@ -10,8 +10,7 @@ Setup: (Default - Customize as you see fit)
 3. Create a 'licenses' directory
 4. Put each license into that directory, one per file, with filenames that end .license
 5. Perform any necessary reformatting on the licenses. (eg. remove extra spaces at the beginning of lines, ensure that there are no line breaks mid-paragraph). There should be a blank line in-between each paragraph
-6. Run the script (ruby acknowledgementGenerator.rb)
-7. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'
+6. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'
 
 Usage:
 1. Open Terminal.app and navigate to the directory this script is placed in
