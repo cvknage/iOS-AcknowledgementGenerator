@@ -53,6 +53,8 @@
 		83F45E6018A542C50004F781 /* UIControl+Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Blocks.m"; sourceTree = "<group>"; };
 		83F45E8018A546FA0004F781 /* NSObject+AutoDescribe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescribe.h"; sourceTree = "<group>"; };
 		83F45E8118A546FA0004F781 /* NSObject+AutoDescribe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDescribe.m"; sourceTree = "<group>"; };
+		83F45E8E18A548D60004F781 /* autodescribe.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = autodescribe.license; sourceTree = "<group>"; };
+		83F45E8F18A548D60004F781 /* ObjectiveC-Basic-Blocks.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ObjectiveC-Basic-Blocks.license"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,8 @@
 		8370E49518A5372D00BA29B8 /* licenses */ = {
 			isa = PBXGroup;
 			children = (
+				83F45E8E18A548D60004F781 /* autodescribe.license */,
+				83F45E8F18A548D60004F781 /* ObjectiveC-Basic-Blocks.license */,
 			);
 			path = licenses;
 			sourceTree = "<group>";
