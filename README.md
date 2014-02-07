@@ -18,3 +18,6 @@ https://rubygems.org/gems/CFPropertyList
 **Usage:**  
 1. Open Terminal.app and navigate to the directory this script is placed in  
 2. In Terminal.app execute: ruby acknowledgementGenerator.rb  
+
+**Screenshots from the Sample App:**  
+![Screenshot from the Sample App](https://raw.github.com/cvknage/iOS-AcknowledgementGenerator/master/SampleProject/SampleProject.png)
