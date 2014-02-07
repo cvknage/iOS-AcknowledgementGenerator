@@ -18,6 +18,14 @@
         <key>Type</key>
         <string>PSChildPaneSpecifier</string>
         <key>Title</key>
+        <string>autodescribe</string>
+        <key>File</key>
+        <string>Acknowledgement-autodescribe</string>
+      </dict>
+      <dict>
+        <key>Type</key>
+        <string>PSChildPaneSpecifier</string>
+        <key>Title</key>
         <string>ObjectiveC-Basic-Blocks</string>
         <key>File</key>
         <string>Acknowledgement-ObjectiveC-Basic-Blocks</string>

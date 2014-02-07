@@ -22,6 +22,7 @@
 		83F45E7918A545970004F781 /* BBAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F45E5B18A542C50004F781 /* BBAlertButton.m */; };
 		83F45E7A18A5459A0004F781 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F45E5D18A542C50004F781 /* UIAlertView+Blocks.m */; };
 		83F45E7B18A5459E0004F781 /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F45E6018A542C50004F781 /* UIControl+Blocks.m */; };
+		83F45E8D18A5470A0004F781 /* NSObject+AutoDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F45E8118A546FA0004F781 /* NSObject+AutoDescribe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		83F45E5D18A542C50004F781 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		83F45E5F18A542C50004F781 /* UIControl+Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Blocks.h"; sourceTree = "<group>"; };
 		83F45E6018A542C50004F781 /* UIControl+Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Blocks.m"; sourceTree = "<group>"; };
+		83F45E8018A546FA0004F781 /* NSObject+AutoDescribe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescribe.h"; sourceTree = "<group>"; };
+		83F45E8118A546FA0004F781 /* NSObject+AutoDescribe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDescribe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 		8370E49318A5367900BA29B8 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				83F45E7C18A546FA0004F781 /* autodescribe */,
 				83F45E4018A542C50004F781 /* ObjectiveC-Basic-Blocks */,
 			);
 			path = External;
@@ -188,6 +192,15 @@
 			path = ObjcBasicBlocks/UIControl;
 			sourceTree = "<group>";
 		};
+		83F45E7C18A546FA0004F781 /* autodescribe */ = {
+			isa = PBXGroup;
+			children = (
+				83F45E8018A546FA0004F781 /* NSObject+AutoDescribe.h */,
+				83F45E8118A546FA0004F781 /* NSObject+AutoDescribe.m */,
+			);
+			path = autodescribe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +272,7 @@
 				83F45E7818A5458F0004F781 /* NSObject+AssociatedValues.m in Sources */,
 				83D934F618A527DF003FFF55 /* AGSAppDelegate.m in Sources */,
 				83F45E7A18A5459A0004F781 /* UIAlertView+Blocks.m in Sources */,
+				83F45E8D18A5470A0004F781 /* NSObject+AutoDescribe.m in Sources */,
 				83F45E7B18A5459E0004F781 /* UIControl+Blocks.m in Sources */,
 				83F45E7918A545970004F781 /* BBAlertButton.m in Sources */,
 				83D934F218A527DF003FFF55 /* main.m in Sources */,
