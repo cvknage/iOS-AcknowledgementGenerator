@@ -212,10 +212,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D9350E18A527DF003FFF55 /* Build configuration list for PBXNativeTarget "AcknowledgementGeneratorSample" */;
 			buildPhases = (
+				8328246518A5732B00A5FA0A /* ShellScript */,
 				83D934DE18A527DF003FFF55 /* Sources */,
 				83D934DF18A527DF003FFF55 /* Frameworks */,
 				83D934E018A527DF003FFF55 /* Resources */,
-				8328246518A5732B00A5FA0A /* ShellScript */,
 			);
 			buildRules = (
 			);
