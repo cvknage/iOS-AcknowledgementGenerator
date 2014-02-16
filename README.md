@@ -49,6 +49,6 @@ The idea for this scripe, and the setup instructions above comes from his post:
 http://stackoverflow.com/questions/6428353/best-way-to-add-license-section-to-ios-settings-bundle/6453507#6453507
 
 # License:
-Released under the BEER License. See the
+Released under the BEER-WARE License. See the
 [LICENSE](https://github.com/cvknage/iOS-AcknowledgementGenerator/blob/master/LICENSE)
 file for more information.
