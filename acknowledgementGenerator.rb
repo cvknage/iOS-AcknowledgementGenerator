@@ -42,9 +42,8 @@ ACKNOWLEDGEMENT_GENERATOR_LICENSE = '"THE BEER-WARE LICENSE" (Revision 42):' +
 
 # Quit unless script gets two command line arguments
 unless ARGV.length == 2
-  puts "Not the right number of arguments."
-  puts "Usage: ruby acknowledgementGenerator.rb <path/to/Settings.bundle> <path/to/licenses/>"
-  exit
+  abort("Not the right number of arguments.\n" + 
+        "Usage: ruby acknowledgementGenerator.rb \"path/to/Settings.bundle\" \"path/to/licenses/\"")
 end
 
 # Constants
