@@ -14,8 +14,7 @@ https://rubygems.org/gems/CFPropertyList
 4. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'  
 
 **Usage:**  
-1. Open Terminal.app and navigate to the directory this script is placed in  
-2. In Terminal.app execute:  
+1. In Terminal execute: (modefy to suit your needs)  
 
 ```
 ./acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
