@@ -1,1 +1,1 @@
-../../../../iOS-AcknowledgementGenerator.git/acknowledgementGenerator.rb
+../../../acknowledgementGenerator.rb
