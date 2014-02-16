@@ -30,7 +30,7 @@ http://stackoverflow.com/questions/6428353/best-way-to-add-license-section-to-io
 
 =end
 
-require 'cfpropertylist'
+require 'CFPropertyList'
 
 # License
 ACKNOWLEDGEMENT_GENERATOR_LICENSE = '"THE BEER-WARE LICENSE" (Revision 42):' +
