@@ -281,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if gem list CFPropertyList -i; then\ncd AcknowledgementGeneratorSample/Settings\nruby acknowledgementGenerator.rb \"Settings.bundle\" \"licenses\"\nfi";
+			shellScript = "if gem list CFPropertyList -i; then\nruby AcknowledgementGeneratorSample/Settings/acknowledgementGenerator.rb \"AcknowledgementGeneratorSample/Settings/Settings.bundle\" \"AcknowledgementGeneratorSample/Settings/licenses\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
