@@ -40,9 +40,16 @@ ACKNOWLEDGEMENT_GENERATOR_LICENSE = '"THE BEER-WARE LICENSE" (Revision 42):' +
 'can do whatever you want with this stuff. If we meet some day, and you think ' +
 'this stuff is worth it, you can buy me a beer in return Christophe Vallinas Knage.'
 
+# Quit unless script gets two command line arguments
+unless ARGV.length == 2
+  puts "Not the right number of arguments."
+  puts "Usage: ruby acknowledgementGenerator.rb <path/to/Settings.bundle> <path/to/licenses/>"
+  exit
+end
+
 # Constants
-SETTINGS_BUNDLE = "Settings.bundle"
-LICENSE_FILE_DIR_PATH = "licenses/"
+SETTINGS_BUNDLE = ARGV[0]
+LICENSE_FILE_DIR_PATH = ARGV[1]
 LICENSE_FILE_EXTENSION = ".license"
 
 class AcknowledgementGenerator
@@ -94,7 +101,7 @@ if __FILE__ == $PROGRAM_NAME
 
     # Iterate all license files and generate coresponding acknowledgement plists
     acknowledgementListItems = Array.new
-    Dir.glob(LICENSE_FILE_DIR_PATH + '*' + LICENSE_FILE_EXTENSION) do |file|
+    Dir.glob(LICENSE_FILE_DIR_PATH + '/*' + LICENSE_FILE_EXTENSION) do |file|
         print "Parsing: #{file.split('/').last}..."
 
         # Extract name
