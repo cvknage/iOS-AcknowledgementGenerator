@@ -32,8 +32,7 @@ If you want this script to run whenever you build your project, you can add a bu
 
 ```
 if gem list CFPropertyList -i; then
-cd AcknowledgementGeneratorSample/Settings
-ruby acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
+ruby path/to/acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
 fi
 ```
 
