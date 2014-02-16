@@ -8,16 +8,18 @@ In order to use this 'AcknowledgementGenerator' you must have the 'CFPropertyLis
 https://rubygems.org/gems/CFPropertyList
 
 **Setup: (Default - Customize as you see fit)**  
-1. Navigate to the directory that contains your Settings.bundle  
-2. Put this script into that directory  
-3. Create a 'licenses' directory  
-4. Put each license into that directory, one per file, with filenames that end .license  
-5. Perform any necessary reformatting on the licenses. (eg. remove extra spaces at the beginning of lines, ensure that there are no line breaks mid-paragraph). There should be a blank line in-between each paragraph  
-6. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'  
+1. Create a 'licenses' directory  
+2. Put each license into that directory, one per file, with filenames that end .license  
+3. Perform any necessary reformatting on the licenses. (eg. remove extra spaces at the beginning of lines, ensure that there are no line breaks mid-paragraph). There should be a blank line in-between each paragraph  
+4. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'  
 
 **Usage:**  
 1. Open Terminal.app and navigate to the directory this script is placed in  
-2. In Terminal.app execute: ruby acknowledgementGenerator.rb  
+2. In Terminal.app execute:  
+
+```
+./acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
+```
 
 **Execute Script At Build Time**  
 If you want this script to run whenever you build your project, you can add a build phase to your target.  
@@ -31,7 +33,7 @@ If you want this script to run whenever you build your project, you can add a bu
 ```
 if gem list CFPropertyList -i; then
 cd AcknowledgementGeneratorSample/Settings
-ruby acknowledgementGenerator.rb
+ruby acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
 fi
 ```
 
