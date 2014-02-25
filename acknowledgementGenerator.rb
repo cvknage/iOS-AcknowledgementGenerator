@@ -5,23 +5,41 @@ Preconditions:
 In order to use this 'AcknowledgementGenerator' you must have the 'CFPropertyList' gem installed.
 https://rubygems.org/gems/CFPropertyList
 
+
 Setup: (Default - Customize as you see fit)
-1. Navigate to the directory that contains your Settings.bundle
-2. Put this script into that directory
-3. Create a 'licenses' directory
-4. Put each license into that directory, one per file, with filenames that end .license
-5. Perform any necessary reformatting on the licenses. (eg. remove extra spaces at the beginning of lines, ensure that there are no line breaks mid-paragraph). There should be a blank line in-between each paragraph
-6. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'
+1. Create a 'licenses' directory  
+2. Put each license into that directory, one per file, with filenames that end .license
+3. Perform any necessary reformatting on the licenses. 
+   (eg. remove extra spaces at the beginning of lines, ensure that there are no line breaks mid-paragraph). 
+   There should be a blank line in-between each paragraph
+4. Edit your settings bundle Root.plist to include a child section called 'Acknowledgements'
+
 
 Usage:
-1. Open Terminal.app and navigate to the directory this script is placed in
-2. In Terminal.app execute: ruby acknowledgementGenerator.rb
+1. In Terminal execute: (modefy to suit your needs)
+./acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
+
+
+Execute Script At Build Time:
+If you want this script to run whenever you build your project, you can add a build phase to your target.
+
+1. Select your project file
+2. Select the target application
+3. Click the 'Build Phases' tab
+4. Now from the menu select: Editor > Add Build Phase > Add Run Script Build Phase
+5. Enter something like the folowing script: (modefy to suit your needs) 
+
+if gem list CFPropertyList -i; then
+    ruby path/to/acknowledgementGenerator.rb "path/to/Settings.bundle" "path/to/licenses"
+fi
+
 
 License:
 "THE BEER-WARE LICENSE" (Revision 42):
 <http://www.knage.net> wrote this file. As long as you retain this notice you
 can do whatever you want with this stuff. If we meet some day, and you think
 this stuff is worth it, you can buy me a beer in return Christophe Vallinas Knage.
+
 
 Acknowledgements:
 Thanks to JosephH @ stackoverflow.
@@ -32,15 +50,7 @@ http://stackoverflow.com/questions/6428353/best-way-to-add-license-section-to-io
 
 require 'CFPropertyList'
 
-# License
-ACKNOWLEDGEMENT_GENERATOR_LICENSE = '"THE BEER-WARE LICENSE" (Revision 42):' +
-'
-' +
-'<http://www.knage.net> wrote this file. As long as you retain this notice you ' +
-'can do whatever you want with this stuff. If we meet some day, and you think ' +
-'this stuff is worth it, you can buy me a beer in return Christophe Vallinas Knage.'
-
-# Quit unless script gets two command line arguments
+# Quit unless script gets two arguments
 unless ARGV.length == 2
   abort("Not the right number of arguments.\n" + 
         "Usage: ruby acknowledgementGenerator.rb \"path/to/Settings.bundle\" \"path/to/licenses/\"")
@@ -50,6 +60,12 @@ end
 SETTINGS_BUNDLE = ARGV[0]
 LICENSE_FILE_DIR_PATH = ARGV[1]
 LICENSE_FILE_EXTENSION = ".license"
+ACKNOWLEDGEMENT_GENERATOR_LICENSE = '"THE BEER-WARE LICENSE" (Revision 42):' +
+'
+' +
+'<http://www.knage.net> wrote this file. As long as you retain this notice you ' +
+'can do whatever you want with this stuff. If we meet some day, and you think ' +
+'this stuff is worth it, you can buy me a beer in return Christophe Vallinas Knage.'
 
 class AcknowledgementGenerator
     def createAcknowledgement(name, content)
